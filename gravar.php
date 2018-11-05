@@ -18,7 +18,7 @@ if($imagem != NULL) {
  
         @mysql_select_db($db) or die("Impossível Conectar"); 
  
-        mysql_query("INSERT INTO PESSOA (PES_IMG) VALUES ('$mysqlImg')") or die("O sistema não foi capaz de executar a query"); 
+        mysql_query("INSERT INTO pessoa (pes_img) VALUES ('$mysqlImg')") or die("O sistema não foi capaz de executar a query"); 
  
         unlink($nomeFinal);
          
