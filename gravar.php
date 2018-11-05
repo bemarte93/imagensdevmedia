@@ -1,5 +1,6 @@
 <?php
- 
+
+require("conecta.php"); 
 $imagem = $_FILES["imagem"];
 $host = "den1.mysql4.gear.host";
 $username = "imagensdevmedia";
