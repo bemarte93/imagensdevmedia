@@ -1,9 +1,9 @@
 <?php
  
-$host = "localhost";
-$username = "root";
-$password = "";
-$db = "test";
+$host = "den1.mysql4.gear.host";
+$username = "imagensdevmedia";
+$password = "Wa036S~F40r-";
+$db = "imagensdevmedia";
  
 mysql_connect($host,$username,$password) or die("Impossível conectar ao banco."); 
  
