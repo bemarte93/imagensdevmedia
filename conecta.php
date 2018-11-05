@@ -1,5 +1,6 @@
 <?php
   $conexao = mysql_connect("den1.mysql4.gear.host", "imagensdevmedia", "Wa036S~F40r-");
+  $con = mysqli_connect("den1.mysql4.gear.host","imagensdevmedia","Wa036S~F40r-","imagensdevmedia"); 
     
   if($conexao)
   {
