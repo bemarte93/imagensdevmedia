@@ -1,12 +1,9 @@
 <?php
-  $con = mysqli_connect("den1.mysql4.gear.host","imagensdevmedia","Wa036S~F40r-","imagensdevmedia"); 
-    
-  if($conexao)
+$con = mysqli_connect("den1.mysql4.gear.host","imagensdevmedia","Wa036S~F40r-","imagensdevmedia");
+
+// Check connection
+if (mysqli_connect_errno())
   {
-  $baseSelecionada = mysql_select_db("imagensdevmedia");
-  if (!$baseSelecionada) {
-      die ('Não foi possível conectar a base de dados: ' . mysql_error());
-  } } else {
-      die('Não conectado : ' . mysql_error());
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
   }
-  ?>
+?>
