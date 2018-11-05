@@ -14,9 +14,9 @@
       $conteudo = addslashes($conteudo);
       fclose($fp);
     
-  $queryInsercao = "INSERT INTO tabela_imagens (evento, descrição, nome_imagem, tamanho_image, tipo_imagem, imagem) VALUES ('$nomeEvento', '$descricaoEvento','$nome','$tamanho', '$tipo','$conteudo')";
+  $queryInsercao = "INSERT INTO tabela_imagens (nome_evento, descrição_evento, nome_imagem, tamanho_imagem, tipo_imagem, imagem) VALUES ('$nomeEvento', '$descricaoEvento','$nome','$tamanho', '$tipo','$conteudo')";
     
-  mysql_query($queryInsercao) or die("Algo deu errado ao inserir o registro. Tente novamente.");
+   mysql_query($queryInsercao) or die("Algo deu errado ao inserir o registro. Tente novamente.");
   echo 'Registro inserido com sucesso!'; 
   header('Location: index.php');
    if(mysql_affected_rows($conexao) > 0)
